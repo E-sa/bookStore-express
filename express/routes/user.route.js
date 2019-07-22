@@ -145,7 +145,7 @@ router.post('/login', (req, res) => {
 
 //Auth
 //welcome page
-router.put('/logout',guard, (req,res,next) => {
+router.put('/welcome',guard, (req,res,next) => {
     res.json('welcome ' + req.user.username);
 
  
