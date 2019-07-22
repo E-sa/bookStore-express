@@ -71,11 +71,12 @@ router.post('/rent', guard, (req, res) => {
             .then(book => {
                 if(book){
                     Book.updateOne({"title":title}, {$push: { "users": req.user.email }})
+                    .findOne({title})
                     .then(book =>{
                         res.json({
                             status: true,
-                            // data: book,
-                            msg: 'hey ' + req.user.username + ', thank you for purchase the book'
+                            data: book,
+                            msg: 'hey ' + req.user.username + ', you can have the book for a mounth'
                             // sth: req.user.email
                         });
 
