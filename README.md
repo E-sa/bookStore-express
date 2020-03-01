@@ -1,19 +1,16 @@
 # bookStore-express
 
 
-install:
 
+To start:
 
-    inside express folder:
-		
-		
-        npm install
-        npm install mongoose
-        npm install --save bcrypt-nodejs    
-        npm install cors
-        npm install helmet
-        npm install jsonwebtoken
-        npm install config 
+    1.Download the project
+  
+    2.Run `npm install`
+  
+    3.Run `npm start`
+  
+    4.See the result on your browser
 
 
 
